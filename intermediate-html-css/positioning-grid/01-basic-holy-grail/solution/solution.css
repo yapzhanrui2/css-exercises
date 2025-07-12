@@ -49,21 +49,20 @@ html {
 
 /* SOLUTION */
 
-.container {
+.container{
   display: grid;
-  grid-template-columns: 300px 900px;
-  grid-template-rows: 100px 100px 500px 100px;
-  gap: 15px;
+  grid-template: 100px 100px 500px 100px/ 300px 900px;
+  column-gap: 15px;
+  row-gap: 15px;
 }
 
-.header {
+.header{
   grid-column: 1 / 3;
 }
 
-.sidebar {
+.sidebar{
   grid-row: 2 / 4;
 }
-
-.footer {
+.footer{
   grid-column: 1 / 3;
 }
